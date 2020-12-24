@@ -1,0 +1,16 @@
+section (id='searchForm' class='module')
+  h3 SEARCH
+  
+  p Need inspiration for a new project? Or is there something specific you'd like guidance on? Use this roadmap generator to come up with ideas or find specific resources that match any of your queries!
+  p For example: <i>I'd like to learn ___ to do ___ using ___ to make ___.</i>
+
+  form (action='search' id='search' method='post')
+    label (for='do')=Do
+    select (name='do' id='do')
+      option (value='' selected)=anything
+      option (value='tag')=tag
+
+    button (id='submitButton' type='submit')=Search
+    button (id='randomButton' type='random')=Random
+    button (id='resetButton' type='reset')=Reset
+  
