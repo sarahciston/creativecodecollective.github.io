@@ -1,14 +1,70 @@
-doctype html
-html(lang="en")
+extends layout.pug
 
-  include includes/head.pug
+block content
 
-  body
-  
-    include includes/header.pug
-    
-    main(class="bubble3")
-    
-      div(class="container")
+  section
+    h1.page-title RESOURCE HUB
+
+  section.generator#generator
+    p Need inspiration for a new project? Or is there something specific you'd like guidance on? Use this generator to come up with ideas or find specific resources that match any of your queries!
+    p For example: <i>I'd like to learn ___ to do ___ using ___ to make ___.</i>
+
+    form(class='searchForm' id='searchForm' method='GET')
+      div.action
+        label.action-label(for='think') Think
+        select.action-select(name='think' id='think')
+          option(value='' selected) anything
+          each val in ['critical code studies', 'algorithmic bias']
+            option(value=val)= val
+      div.action
+        label.action-label(for='use') Use
+        select.action-select(name='use' id='use')
+          option(value='' selected) anything
+          each val in ['processing', 'javascript', 'p5.js', 'opengl', 'glsl']
+            option(value=val)= val
+      div.action
+        label.action-label(for='make') Make
+        select.action-select(name='make' id='make')
+          option(value='' selected) anything
+          each val in ['generative art', 'websites', 'shaders']
+            option(value=val)= val
       
-      include includes/searchForm2.pug
+      div
+        button(class='button' type='reset') Reset
+        button(class='button' id='randomButton' type='button') Random
+        button(class='button' type='submit') Search
+
+  section.resources-container
+    if results
+      h2 Results
+      p #{results.length} results
+      div.resources
+        each doc in results
+          div.res
+            h3.res-title: a(href=doc.link)= doc.title
+            p.res-author by #{doc.creator}
+            dl.res-tags
+              if doc.theorize != ''
+                p
+                  dt Theorize
+                  each tag in doc.theorize
+                    dd= tag
+              if doc.use != ''
+                p
+                  dt Use
+                  each tag in doc.use
+                    dd= tag
+              if doc.make != ''
+                p
+                  dt Make
+                  each tag in doc.make
+                    dd= tag
+            div.res-meta
+              - var lang_str = doc.resource_languages.join(', ')
+              - var level_str = doc.levels.join(', ')
+              p Suitable for: #{level_str}. #[br] Available in: #{lang_str}.
+              blockquote= doc.contributor_description
+              p —#{doc.contributor_name}
+  
+block scripts
+  script(src="/js/scripts.js")

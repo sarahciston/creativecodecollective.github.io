@@ -1,7 +1,10 @@
-header(class="bubble2")
-  span(class="title title_flex") CREATIVE CODE COLLECTIVE
+header.bubble2
+  if title == "Creative Code Collective"
+    span(class="title title_flex") CREATIVE CODE COLLECTIVE
+  else
+    span(class="title title_breathe") CREATIVE CODE COLLECTIVE
   nav
-    ul(class="links")
+    ul.links
       li
         a(href="/") Home
       li

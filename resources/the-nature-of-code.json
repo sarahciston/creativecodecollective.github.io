@@ -1,0 +1,13 @@
+{
+  "_id": "the-nature-of-code",
+  "title": "The Nature of Code",
+  "creator": "Daniel Shiffman",
+  "link": "https://natureofcode.com/",
+  "resource_languages": ["English"],
+  "theorize": ["nature", "math"],
+  "use": ["javascript", "p5.js"],
+  "make": ["generative art"],
+  "levels": ["beginner", "intermediate"],
+  "contributor_name": "Sarah Ciston",
+  "contributor_description": ""
+}
