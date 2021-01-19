@@ -1,13 +1,90 @@
 [
   {
-    "title": "",
+    "title": "Exploratory Programming for the Arts & Humanities",
     "creator": "",
-    "link": "",
-    "human_languages": ["",""],
-    "think": ["", ""],
-    "use": ["", ""],
-    "make": ["", ""],
-    "submitted_by": "",
-    "submitter_comment": ""
+    "link": "https://www.amazon.com/Exploratory-Programming-Arts-Humanities-Press/dp/0262034204/",
+    "human_languages": ["English"],
+    "think": ["first steps", "humanities", "creative coding"],
+    "use": ["python", "processing"],
+    "make": [],
+    "submitted_by": "Sarah Ciston",
+    "submitter_comment": "covers Python and Processing"
+  },
+  {
+    "title": "Atom",
+    "creator": "Github, pre-acquisition",
+    "link": "https://atom.io/",
+    "human_languages": ["English"],
+    "think": [],
+    "use": ["ide"],
+    "make": [],
+    "submitted_by": "Samir Ghosh",
+    "submitter_comment": "IDE from a bygone era. No-frills at first, good for those who like downloading add-ons. Chaotic Good."
+  },
+  {
+    "title": "Brackets",
+    "creator": "Adobe",
+    "link": "https://atom.io/",
+    "human_languages": ["English"],
+    "think": [],
+    "use": ["ide"],
+    "make": [],
+    "submitted_by": "Samir Ghosh",
+    "submitter_comment": "IDE made for front-end development. Consider using this over others if your CSS gets crazy. If you're going to be spending a lot of time making websites, check this out."
+  },
+  {
+    "title": "Sublime Text",
+    "creator": "Sublime HQ",
+    "link": "https://www.sublimetext.com/",
+    "human_languages": ["English"],
+    "think": [],
+    "use": ["ide"],
+    "make": [],
+    "submitted_by": "Samir Ghosh",
+    "submitter_comment": "Trusted and versatile. Lawful Good."
+  },
+  {
+    "title": "VS Code",
+    "creator": "Microsoft",
+    "link": "https://code.visualstudio.com/",
+    "human_languages": ["English"],
+    "think": [],
+    "use": ["ide"],
+    "make": [],
+    "submitted_by": "Samir Ghosh",
+    "submitter_comment": "Go forth with the power of a corporation and wide adoption behind you. Many projects on the internet will require you to know this well in order to participate meaningfully. Maybe we're all destined to use this one day."
+  },
+  {
+    "title": "XCode",
+    "creator": "Apple",
+    "link": "https://developer.apple.com/xcode/",
+    "human_languages": ["English"],
+    "think": [],
+    "use": ["ide"],
+    "make": [],
+    "submitted_by": "Samir Ghosh",
+    "submitter_comment": "Must know it if you want to build on Apple products. Lawful Evil."
+  },
+  {
+    "title": "Pure Data",
+    "creator": "Pure Data",
+    "link": "https://puredata.info/",
+    "human_languages": ["English"],
+    "think": [],
+    "use": ["visual dev"],
+    "make": ["synthesizers", "audio"],
+    "submitted_by": "Samir Ghosh",
+    "submitter_comment": "An OG, open source favorite for manipulating audio. Great for synthesizers and audio buffs."
+  },
+  {
+    "title": "Max MSP",
+    "creator": "Cycling 74",
+    "link": "https://cycling74.com/",
+    "human_languages": ["English"],
+    "think": [],
+    "use": ["visual dev"],
+    "make": ["synthesizers", "audio"],
+    "submitted_by": "Samir Ghosh",
+    "submitter_comment": "An OG, open source favorite for manipulating audio. Great for synthesizers and audio buffs."
   }
 ]

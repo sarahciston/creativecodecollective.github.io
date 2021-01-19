@@ -14,19 +14,22 @@ block content
         label.action-label(for='think') Think
         select.action-select(name='think' id='think')
           option(value='' selected) anything
-          each val in ['critical code studies', 'algorithmic bias']
+          - let think = Array.from(tags.think)
+          each val in think
             option(value=val)= val
       div.action
         label.action-label(for='use') Use
         select.action-select(name='use' id='use')
           option(value='' selected) anything
-          each val in ['processing', 'javascript', 'p5.js', 'opengl', 'glsl']
+          - let use = Array.from(tags.use)
+          each val in use
             option(value=val)= val
       div.action
         label.action-label(for='make') Make
         select.action-select(name='make' id='make')
           option(value='' selected) anything
-          each val in ['generative art', 'websites', 'shaders']
+          - let make = Array.from(tags.make)
+          each val in make
             option(value=val)= val
       
       div
@@ -44,10 +47,10 @@ block content
             h3.res-title: a(href=doc.link)= doc.title
             p.res-author by #{doc.creator}
             dl.res-tags
-              if doc.theorize != ''
+              if doc.think != ''
                 p
-                  dt Theorize
-                  each tag in doc.theorize
+                  dt Think
+                  each tag in doc.think
                     dd= tag
               if doc.use != ''
                 p
@@ -60,11 +63,58 @@ block content
                   each tag in doc.make
                     dd= tag
             div.res-meta
-              - var lang_str = doc.resource_languages.join(', ')
-              - var level_str = doc.levels.join(', ')
-              p Suitable for: #{level_str}. #[br] Available in: #{lang_str}.
-              blockquote= doc.contributor_description
-              p —#{doc.contributor_name}
+              - var lang_str = doc.human_languages.join(', ')
+              p Available in: #{lang_str}.
+              blockquote= doc.submitter_comment
+              p —#{doc.submitted_by}
+  
+  section.generator#add
+    p Have something to recommend to fellow creative coders and learners? Use this form:
+    
+    form(class='searchForm' id='addForm' method='GET')
+      div.action
+        label.action-label(for='title') Title
+        input.action-select(name='title' id='title' type='text')
+      div.action
+        label.action-label(for='creator') Creator
+        input.action-select(name='creator' id='creator' type='text')
+      div.action
+        label.action-label(for='link') Link
+        input.action-select(name='link' id='link')
+      div.action
+        label.action-label(for='human_languages') Human Languages
+        select.action-select(name='human_languages' id='human_languages')
+          option(value='' selected) anything  
+          each val in ['list']
+            option(value=val)= val
+      div.action
+        label.action-label(for='think') Think
+        select.action-select(name='think' id='think')
+          option(value='' selected) anything
+          each val in ['think']
+            option(value=val)= val
+      div.action
+        label.action-label(for='use') Use
+        select.action-select(name='use' id='use')
+          option(value='' selected) anything
+          each val in ['use']
+            option(value=val)= val
+      div.action
+        label.action-label(for='make') Make
+        select.action-select(name='make' id='make')
+          option(value='' selected) anything
+          each val in ['make']
+            option(value=val)= val
+      div.action
+        label.action-label(for='submitted_by') Submitted By
+        input.action-select(name='submitted_by' id='submitted_by'  type='text')
+      div.action
+        label.action-label(for='submitter_comment') Submitter Comment
+        input.action-select(name='submitter_comment' id='submitter_comment' type='textarea')
+        
+      div
+        button(class='button' type='clear') Clear
+        button(class='button' type='submit' id='add') Add This Resource
   
 block scripts
   script(src="/js/scripts.js")

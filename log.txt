@@ -1116,3 +1116,8 @@
 [Tue, 05 Jan 2021 01:37:11 GMT] [info] [<0.000.0>] ::ffff:127.0.0.1 - - GET /_utils 304
 [Tue, 05 Jan 2021 01:37:12 GMT] [info] [<0.000.0>] ::ffff:127.0.0.1 - - GET /dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 404
 [Tue, 05 Jan 2021 01:37:12 GMT] [info] [<0.000.0>] ::ffff:127.0.0.1 - - GET /dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 404
+[Tue, 05 Jan 2021 02:49:36 GMT] [info] [<0.000.0>] ::ffff:127.0.0.1 - - GET /bulkAdd 404
+[Tue, 05 Jan 2021 02:49:36 GMT] [info] [<0.000.0>] ::ffff:127.0.0.1 - - GET /bulkAdd 404
+[Tue, 05 Jan 2021 02:50:37 GMT] [info] [<0.000.0>] ::ffff:127.0.0.1 - - GET /resources 404
+[Tue, 05 Jan 2021 02:50:50 GMT] [info] [<0.000.0>] ::ffff:127.0.0.1 - - GET / 200
+[Tue, 12 Jan 2021 01:36:35 GMT] [info] [<0.000.0>] ::ffff:127.0.0.1 - - GET /resources 404
