@@ -2,7 +2,7 @@
 layout: default
 id: showcase
 permalink: showcase
-title: Summer Lab | Creative Code Collective
+title: Showcase | Code Collective
 ---
 
 
@@ -12,8 +12,9 @@ title: Summer Lab | Creative Code Collective
 <div id="resources">
 </div>
 
-## Summer Lab Intensive
 <div class="article">
+
+## About the Summer Lab Intensive
 
 9-11a PDT, 4 weeks 2x week, [Sarah Ciston](https://sarahciston.com)
 
@@ -69,11 +70,15 @@ Please send a **CV/resume** and a **letter expressing your interest in the cours
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
 <script>
-    let resourses = document.querySelector('.resources')
+    let resources = document.querySelector('.resources')
 
     // papa parse
-    const public_spreadsheet_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTaVhvuhl2fp41u1WTde4FAf5rxW-pZ9GMbREmSDf-wsM8uXdn5GrikJtweUDoqkFW_fHn3QXc1mxpD/pub?output=csv"
+    const public_spreadsheet_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTaVhvuhl2fp41u1WTde4FAf5rxW-pZ9GMbREmSDf-wsM8uXdn5GrikJtweUDoqkFW_fHn3QXc1mxpD/pubhtml?output=csv"
     console.log('<a href="' + public_spreadsheet_url + '">' + public_spreadsheet_url + '</a>');
+
+    // old url
+    // "https://docs.google.com/spreadsheets/d/e/2PACX-1vTaVhvuhl2fp41u1WTde4FAf5rxW-pZ9GMbREmSDf-wsM8uXdn5GrikJtweUDoqkFW_fHn3QXc1mxpD/pub?output=csv"
+
 
     // initialise papa parse
 
