@@ -16,7 +16,9 @@ title: Resource Hub | Creative Code Collective
 
     <h2 class="subtitle">Resource Hub</h2>
 
-    <p class="center"><a href="https://forms.gle/1ffhL7yAdWP6jC5Z6" target="_blank">Submit a resource</a></p>
+    Pardon our dust while we're reorganizing :)
+
+    <!-- <p class="center"><a href="[MAKE NEW FORM LINK // https://forms.gle/1ffhL7yAdWP6jC5Z6]" target="_blank">Submit a resource</a></p> -->
 
     <div id="roadmap" class="roadmap">
       <h2>Generator</h2>
@@ -104,17 +106,18 @@ title: Resource Hub | Creative Code Collective
         <details open class="res-make">
           <summary>Make</summary>
         </details>
-        <details class="res-languages">
+        <!-- <details class="res-languages">
           <summary>Languages</summary>
-        </details>
-        <details class="res-collections">
+        </details> -->
+        <!-- <details class="res-collections">
           <summary>Collections</summary>
-        </details>
+        </details> -->
       </div>
     </div>
 
-    <div id="resources">
-</div>
+  <div id="resources">
+  </div>
+
   </main>
   
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
@@ -124,16 +127,19 @@ title: Resource Hub | Creative Code Collective
   <script src="/assets/js/autocomplete.js"></script>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
-<script>
-    let resources = document.querySelector('.resources')
+
+
+<!--in process of moving script to separate file in /assets/js/scripts.js-->
+
+<!-- <script>
+
+    let resources = document.querySelector('#resources')
+
 
     // papa parse
-    const public_spreadsheet_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTaVhvuhl2fp41u1WTde4FAf5rxW-pZ9GMbREmSDf-wsM8uXdn5GrikJtweUDoqkFW_fHn3QXc1mxpD/pubhtml?output=csv"
+    const public_spreadsheet_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRdF4YTsRX1OKJzZs2hLb74RdOsQkRZxGlzNjxTYeeiPE1ckmJrpD8nagDz217SLjVLpeqPZwR1N_3y/pub?output=csv"
+    // const public_spreadsheet_url = "https://proxy.corsfix.com/?https://wolke.khm.de/index.php/s/mxqtZDbe3YzkjjD"
     console.log('<a href="' + public_spreadsheet_url + '">' + public_spreadsheet_url + '</a>');
-
-    // old url
-    // "https://docs.google.com/spreadsheets/d/e/2PACX-1vTaVhvuhl2fp41u1WTde4FAf5rxW-pZ9GMbREmSDf-wsM8uXdn5GrikJtweUDoqkFW_fHn3QXc1mxpD/pub?output=csv"
-
 
     // initialise papa parse
 
@@ -146,7 +152,13 @@ title: Resource Hub | Creative Code Collective
       })
     });
 
+    //additional tests with papaparse options:         // downloadRequestHeaders: {
+                                                        //   'Access-Control-Request-Method': 'GET,POST,PUT',
+                                                        //   'Access-Control-Allow-Origin': ['https://wolke.khm.de'],
+                                                        //   },
+
     function loadData(r){
+      console.log('reached load data')
       let data = r.data
       for (let d in data){
         createResource(data[d])
@@ -162,26 +174,25 @@ title: Resource Hub | Creative Code Collective
         projectURL.href = r.projectURL
         res.appendChild(projectURL)
 
-
         if (r.codeURL) {
             codeURL = document.createElement("a")
             codeURL.href = r.codeURL
             res.appendChild(codeURL)
         }
 
-        if (r.image){
-            let imgList = r.image
-            let imgID = imgList.substring(33,66)
-            console.log(imgID)
-            //imgList = imgList.split(",").sort()    
-            console.log(imgList)
-            console.log(imgID)     
-            let thumb = document.createElement("img")
-            //thumb.src = "http://drive.google.com/uc?export=view&id=" + imgID
-            thumb.src = "https://drive.usercontent.google.com/download?id=" + imgID + "&export=view&authuser=0"
-            thumb.classList.add("res-thumb")
-            projectURL.appendChild(thumb)
-        }
+        // if (r.image){
+        //     let imgList = r.image
+        //     let imgID = imgList.substring(33,66)
+        //     console.log(imgID)
+        //     //imgList = imgList.split(",").sort()    
+        //     console.log(imgList)
+        //     console.log(imgID)     
+        //     let thumb = document.createElement("img")
+        //     thumb.src = "http://drive.google.com/uc?export=view&id=" + imgID
+        //     thumb.src = "https://drive.usercontent.google.com/download?id=" + imgID + "&export=view&authuser=0"
+        //     thumb.classList.add("res-thumb")
+        //     projectURL.appendChild(thumb)
+        // }
         
         let title = document.createElement("h3")
         title.classList.add("res-title")
@@ -243,9 +254,9 @@ title: Resource Hub | Creative Code Collective
             }
 
         resources.appendChild(res)
-
     }
-</script>
+
+</script> -->
 
   {% include footer.html %}
 
