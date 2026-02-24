@@ -40,24 +40,21 @@ Contributors and participants past and present:
       
 #### Partner & peer organizations:
       
-* <a href="https://www.feminist.ai/">Feminist.AI</a>
-* <a href="https://tinytechzines.org/">Tiny Tech Zines</a>
-* <a href="https://p5js.org/">p5.js</a>
-* <a href="https://colorcoded.la/">Color Coded LA</a>
+* [p5.js](https://p5js.org)
+* [Processing Foundation](https://processingfoundation.org/)
+* [Tiny Tech Zines](https://tinytechzines.org/)
+* [Feminist.AI](https://www.feminist.ai/)
+* Color Coded LA
 * [Feminist Center for Creative Work](https://fccwla.org/)
-    
 
 #### Inspirations:
       
-* <a href="https://tinytools.directory/">Tiny Tools Directory</a> by Everest Pipkin
+* [Tiny Tools Directory](https://tinytools.directory/) by Everest Pipkin
+* [Intersectional AI Toolkit](https://intersectionalai.com)
 
-    
 #### Join the list!
 
-This website is open-sourced on <a href="https://github.com/creativecodecollective/creativecodecollective.github.io">GitHub</a>, and our resource hub draws from a live <a href="">Google Sheet</a>. Reach out to learn how to get started!
-
-<!-- broken -->
-<!-- https://docs.google.com/spreadsheets/d/e/2PACX-1vSeEGW1VxkMnHgIIl16U_78ZrP8rvWvk66_InItIv1Riq0K2d7D6fA1jqfcBl7PZHPAQXyqofWmcJTV/pub -->
+This website is open-sourced on <a href="https://github.com/creativecodecollective/creativecodecollective.github.io">GitHub</a>, and our resource hub draws from a live Google Sheet (we are in the process of de-Googling, but it's a long story involving CORS and APIs). Reach out to learn how to get started!
     
 <!-- </div> -->
 <!-- {% include footer.html %} -->

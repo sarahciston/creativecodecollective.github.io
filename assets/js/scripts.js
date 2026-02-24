@@ -209,10 +209,11 @@ function populateDropdowns(tags, field) {
 function createResource(r){
   // create element
   let res = resTemplate.cloneNode(true);
-  console.log(r.link, r.title, r.creator, r.blurb)
+  console.log(r.link, r.title, r.creator, r.description, r.blurb)
   if (r.link) res.querySelector(".res-title").href = r.link;
   res.querySelector(".res-title h3").innerText = r.title;
   res.querySelector(".res-creator").innerText = r.creator;
+  res.querySelector(".res-description").innerText = r.description;
   res.querySelector(".res-blurb").innerText = r.blurb;
   // for (let field of ["learn", "use", "do", "make", "collections", "languages"]) {
   for (let field of ["learn", "use", "do", "make"]) {
